@@ -1,0 +1,923 @@
+:root{
+    --pink:#d197b0;
+    
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    background:url(https://i.pinimg.com/564x/cf/04/8a/cf048ab88ac03000a6597932bf3895ee.jpg) no-repeat;
+    background-size: cover;
+    background-position: cover;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    position: relative;
+    font-size: 3rem;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    font-size: 6rem;
+    color:#333;
+    margin-right: 27rem;
+    margin-left: 27rem;
+}
+
+
+
+section{
+    padding:2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(255, 51, 153,.05);
+}
+
+.heading span{
+    color:var(--pink);
+}
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+}
+
+header .navbar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(255, 51, 153,.05);
+}
+
+.heading span{
+    color:var(--pink);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.Ideas .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.Ideas .box-container .box{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    position: relative;    
+}
+
+.Ideas .box-container .box .discount{
+    position: absolute;
+    top:1rem; left:1rem;
+    padding:.7rem 1rem;
+    font-size: 2rem;
+    color:var(--pink);
+    background:rgba(255, 51, 153,.05);
+    z-index: 1;
+    border-radius: .5rem;
+}
+
+.Ideas .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+
+.Ideas .box-container .box .image img{
+    height:25rem;
+}
+
+.Ideas .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.Ideas .box-container .box .image .icons{
+    position: absolute;
+    bottom:-7rem; left:0; right:0;
+    display: flex;
+}
+
+.Ideas .box-container .box:hover .image .icons{
+    bottom:0;
+}
+
+.Ideas .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width:50%;
+    background:var(--pink);
+    color:#fff;
+}
+
+.Ideas .box-container .box .image .icons .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width:100%;
+}
+
+.Ideas .box-container .box .image .icons a:hover{
+    background:#333;
+}
+
+.Ideas .box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+
+.Ideas .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+
+.manthf{
+    background:#eee;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+}
+
+.manthf .content{
+    flex:60rem;
+    position: relative;
+    
+}
+
+.manthf .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+}
+   
+
+.manthft .content h3{
+    font-size: 3rem;
+    color:#333;
+    
+    
+}
+.manthf .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.manthf2{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+       
+}
+
+.manthf2 .content{
+    flex:60rem;
+    position: relative;
+}
+
+.manthf2 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+    
+}
+   
+
+
+.manthft2 .content h3{
+    font-size: 3rem;
+    color:#333;
+    
+    
+    
+    
+}
+.manthf2 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+   
+}
+.manthf3{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+       
+}
+
+.manthf3 .content{
+    flex:60rem;
+    position: relative;
+    
+}
+
+.manthf3 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+}
+   
+
+
+.manthft3 .content h3{
+    font-size: 3rem;
+    color:#333;
+    
+    
+}
+.manthf3 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.manthf4{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+       
+}
+
+.manthf4 .content{
+    flex:60rem;
+    position: relative;
+}
+
+.manthf4 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+    
+}
+   
+
+
+.manthft4 .content h3{
+    font-size: 3rem;
+    color:#333;
+ 
+    
+    
+}
+.manthf4 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+   
+}
+.manthf5{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+    
+       
+}
+
+.manthf5 .content{
+    flex:60rem;
+    position: relative;
+}
+
+.manthf5 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+}
+   
+
+
+.manthft5 .content h3{
+    font-size: 3rem;
+    color:#333;
+    
+    
+}
+.manthf5 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.manthf6{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+    
+       
+}
+
+.manthf6 .content{
+    flex:60rem;
+    position: relative;
+    
+}
+
+.manthf6 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+    
+}
+   
+
+
+.manthft6 .content h3{
+    font-size: 3rem;
+    color:#333;
+ 
+    
+    
+}
+.manthf6 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+   
+}
+.manthf7{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+    
+       
+}
+
+.manthf7 .content{
+    flex:60rem;
+    position: relative;
+    
+}
+
+.manthf7 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+}
+   
+
+
+.manthft7 .content h3{
+    font-size: 3rem;
+    color:#333;
+    
+    
+}
+.manthf7 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.manthf8{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+    
+       
+}
+
+.manthf8 .content{
+    flex:60rem;
+    position: relative;
+}
+
+.manthf8 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+    
+}
+   
+
+
+.manthft8 .content h3{
+    font-size: 3rem;
+    color:#333;
+ 
+    
+    
+}
+.manthf8 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+   
+}
+
+.manthf9{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+    
+       
+}
+
+.manthf9 .content{
+    flex:60rem;
+    position: relative;
+    
+}
+
+.manthf9 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+}
+   
+.manthft9 .content h3{
+    font-size: 3rem;
+    color:#333;
+    
+    
+}
+.manthf9 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.manthf10{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+    
+       
+}
+
+.manthf10 .content{
+    flex:60rem;
+    position: relative;
+    
+}
+
+.manthf10 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+    
+}
+   
+
+
+.manthft10 .content h3{
+    font-size: 3rem;
+    color:#333;
+ 
+    
+    
+}
+.manthf10 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+   
+}
+
+.manthf11{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+    
+       
+}
+
+.manthf11 .content{
+    flex:60rem;
+    position: relative;
+    
+}
+
+.manthf11 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+}
+   
+.manthft11 .content h3{
+    font-size: 3rem;
+    color:#333;
+    
+    
+}
+.manthf11 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.manthf12{
+    background:#eee;
+    display: flex;
+    flex-wrap: grid;
+    gap:1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    width: 100%;
+    padding: 5rem;
+    margin-top: 4rem;
+    border:1.5rem solid #fff;
+    
+    
+       
+}
+
+.manthf12 .content{
+    flex:60rem;
+    position: relative;
+}
+
+.manthf12 .icons img{
+    margin-right: 5rem;
+    max-width: 100%;
+    width:100%;
+    border-radius: .5rem;
+    height: 100%;
+    object-fit: cover;
+    
+}
+   
+
+
+.manthft12 .content h3{
+    font-size: 3rem;
+    color:#333;
+ 
+    
+    
+}
+.manthf12 .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+   
+}
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+    
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.footer .box-container .box{
+    flex:1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding:1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color:#666;
+    font-size: 1.5rem;
+    padding:1rem 0;
+}
+
+.footer .box-container .box a:hover{
+    color:var(--pink);
+    text-decoration: underline;
+}
+
+.footer .box-container .box  img{
+    margin-top: 1rem;
+}
+
+.footer .credit{
+    text-align: center;
+    padding:1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:#333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    padding-bottom: 9rem;
+}
+
+.footer .credit span{
+    color:var(--pink);
+}
+
+@media (max-width:450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3rem;
+    }
+
+}
